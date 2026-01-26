@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adaptive Productivity Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="app-header">
+      <div class="header-left">
+        <div>
+          <h1>Adaptive Productivity Dashboard</h1>
+          <p class="muted" id="currentDate"></p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="header-nav" aria-label="Page navigation">
+          <button class="nav-btn" id="navGoals" data-action="nav-goals">Goals</button>
+          <button class="nav-btn" id="navGoal" data-action="nav-goal">Goal Overview</button>
+          <button class="nav-btn" id="navTasks" data-action="nav-tasks">Tasks</button>
+        </div>
+        <button class="primary-btn" id="newGoalBtn">New Goal</button>
+      </div>
+    </header>
+
+    <main class="page" id="mainView"></main>
+  </div>
+
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h3 id="modalTitle">Confirm</h3>
+      <p id="modalMessage"></p>
+      <div class="modal-actions">
+        <button class="secondary-btn" id="modalCancel">Cancel</button>
+        <button class="danger-btn" id="modalConfirm">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
