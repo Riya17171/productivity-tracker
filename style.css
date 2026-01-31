@@ -2,16 +2,16 @@
   --bg: #a394bb;
   --panel: rgba(255, 255, 255, 0.96);
   --panel-2: #ffffff;
-  --ink: #1f1b2d;
+  --ink: #151221;
   --muted: #847993;
   --accent: #c08ed9;
   --accent-2: #b8c3ff;
   --accent-3: #b7e2ff;
-  --danger: #ea8aa2;
+  --danger: #e05b7d;
   --border: #efe9f5;
   --shadow: 0 16px 34px rgba(63, 50, 90, 0.08);
   --shadow-soft: 0 8px 18px rgba(63, 50, 90, 0.06);
-  --radius: 18px;
+  --radius: 20px;
 }
 
 * {
